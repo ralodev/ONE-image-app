@@ -90,17 +90,17 @@
     <div class="bg-[#ff8c2a] py-3">
       <h1 class="text-5xl text-white text-center font-bold text-balance">Genera tu tarjeta de candidato ONE!</h1>
     </div>
-    <div class="flex font-bold flex-col max-w-[600px] justify-center text-center mx-auto">
+    <div class="flex flex-col max-w-[600px] justify-center text-center mx-auto">
       <p class="py-5">
         Sube tu foto y descarga tu tarjeta de candidato ONE!
         <br />
         Puedes publicarla en Linkedin, Facebook e Instagram para mostrar que estás en el proceso de selección del Programa ONE. No olvides utilizar el hashtag
-        <span class="text-orange-500">#OracleNextEducation</span>,
-        <span class="text-orange-500">#helloONEG6</span>
+        <span class="text-orange-700">#OracleNextEducation</span>,
+        <span class="text-orange-700">#helloONEG6</span>
         y tagear
-        <span class="text-orange-500">@Oracle</span>
+        <span class="text-orange-700">@Oracle</span>
         y
-        <span class="text-orange-500">@AluraLatam</span>
+        <span class="text-orange-700">@AluraLatam</span>
       </p>
       <button @click="$refs.fileInput.click()" class="bg-orange-300 hover:bg-orange-400 border-[1px] border-orange-400 hover:border-orange-500 text-black rounded-lg px-4 py-2 w-64 self-center mt-5">
         Sube tu foto
@@ -123,6 +123,15 @@
         </span>
         <input type="file" @change="uploadImage" accept="image/*" ref="fileInput" class="hidden" />
       </div>
+    </div>
+    <div>
+      <p class="text-center pt-8">
+        Hola! puedes ver el repositorio de este proyecto en
+        <a href="https://github.com/ralodev/ONE-image-app" class="text-blue-600 font-semibold">GitHub</a>
+        <br />
+        También te invito a ver mi perfil de
+        <a href="https://www.linkedin.com/in/raul-lc/" class="text-blue-600 font-semibold">LinkedIn</a>
+      </p>
     </div>
   </main>
 </template>
