@@ -113,13 +113,17 @@
       </button>
     </div>
     <div class="flex justify-center mt-5">
-      <div class="relative w-[750px] h-[750px]">
-        <img :src="template" alt="" class="w-[750px] h-[750px] object-contain" />
-        <img v-if="uploadedImage" :src="uploadedImage" alt="Uploaded Image" class="absolute right-[60px] bottom-[150px] w-[260px] h-[260px] object-cover rounded-2xl overflow-hidden" />
+      <div class="relative w-[250px] h-[250px] md:w-[750px] md:h-[750px]">
+        <img :src="template" alt="" class="w-[250px] h-[250px] md:w-[750px] md:h-[750px] object-contain" />
+        <img
+          v-if="uploadedImage"
+          :src="uploadedImage"
+          alt="Uploaded Image"
+          class="absolute md:right-[60px] right-[20px] md:bottom-[150px] bottom-[50px] md:w-[260px] w-[87px] h-[87px] md:h-[260px] object-cover rounded-[5px] md:rounded-2xl overflow-hidden" />
         <span
-          class="absolute right-[60px] bottom-[150px] w-[260px] h-[260px] object-cover rounded-2xl overflow-hidden flex justify-center items-center cursor-pointer"
+          class="absolute md:right-[60px] right-[20px] md:bottom-[150px] bottom-[50px] md:w-[260px] w-[87px] h-[87px] md:h-[260px] object-cover rounded-[5px] md:rounded-2xl overflow-hidden flex justify-center items-center cursor-pointer"
           @click="$refs.fileInput.click()">
-          <span v-if="!uploadedImage" class="text-gray-400 text-2xl">Sube tu foto</span>
+          <span v-if="!uploadedImage" class="text-gray-400 md:text-2xl text-sm">Sube tu foto</span>
         </span>
         <input type="file" @change="uploadImage" accept="image/*" ref="fileInput" class="hidden" />
       </div>
