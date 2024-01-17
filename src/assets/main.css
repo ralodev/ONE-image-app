@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  /*Template large: 750x750*/
+  .template-lg {
+    @apply lg:w-[750px] lg:h-[750px];
+  }
+  /*Template medium: 500x500*/
+  .template-md {
+    @apply md:w-[500px] md:h-[500px];
+  }
+  /*Template small: 250x250*/
+  .template-sm {
+    @apply w-[250px] h-[250px];
+  }
+  /*Selfie large: 260 x 260; bottom 150px; right 60px; border-radius: 16px*/
+  .selfie-lg {
+    @apply lg:w-[260px] lg:h-[260px] lg:bottom-[150px] lg:right-[60px] lg:rounded-[16px];
+  }
+  /*Selfie medium: 173 x 173; bottom 100px; right 40px; border-radius: 10px*/
+  .selfie-md {
+    @apply md:w-[173px] md:h-[173px] md:bottom-[100px] md:right-[40px] md:rounded-[10px];
+  }
+  /*Selfie small: 78 x 78; bottom 50px; right 20px; border-radius: 5px*/
+  .selfie-sm {
+    @apply w-[86px] h-[78px] bottom-[50px] right-[20px] rounded-[5px];
+  }
+
+  .selfie {
+    @apply lg:w-[260px] lg:h-[260px] lg:bottom-[150px] lg:right-[60px] lg:rounded-[16px] md:w-[173px] md:h-[173px] md:bottom-[100px] md:right-[40px] md:rounded-[10px] w-[86px] h-[86px] bottom-[50px] right-[20px] rounded-[5px];
+  }
+
+  .template {
+    @apply lg:w-[750px] lg:h-[750px] md:w-[500px] md:h-[500px] w-[250px] h-[250px];
+  }
+}
