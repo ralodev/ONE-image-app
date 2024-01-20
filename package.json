@@ -1,5 +1,6 @@
 {
   "name": "one-image-app",
+  "homepage": "alura-one.ralo.dev",
   "version": "0.0.0",
   "private": true,
   "type": "module",

@@ -29,10 +29,15 @@
   }
 
   .selfie {
-    @apply lg:w-[260px] lg:h-[260px] lg:bottom-[150px] lg:right-[60px] lg:rounded-[16px] md:w-[173px] md:h-[173px] md:bottom-[100px] md:right-[40px] md:rounded-[10px] w-[86px] h-[86px] bottom-[50px] right-[20px] rounded-[5px];
+    @apply lg:w-[173px] lg:h-[173px] lg:bottom-[100px] lg:right-[40px] lg:rounded-[10px] w-[86px] h-[86px] bottom-[50px] right-[20px] rounded-[5px];
   }
 
   .template {
-    @apply lg:w-[750px] lg:h-[750px] md:w-[500px] md:h-[500px] w-[250px] h-[250px];
+    @apply lg:w-[500px] lg:h-[500px] w-[250px] h-[250px];
   }
+}
+
+body {
+  background-color: #fff;
+  background-repeat: no-repeat;
 }
